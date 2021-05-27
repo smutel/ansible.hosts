@@ -28,6 +28,7 @@ hosts_hostname_loopback: true
 # Inserts all hosts in the Ansible Inventory
 # file into the Hosts file
 hosts_inventory_to_hosts: false
+hosts_inventory_group: "{{ groups['all'] }}"
 
 # If this option and the hosts_inventory_to_hosts is enabled it writes all private ip addresses from the inventory into the hosts
 hosts_all_private: true

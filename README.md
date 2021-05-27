@@ -91,6 +91,12 @@ hosts_inventory_to_hosts: false
 
 Optionally, `hosts_aliases` can be set in the `host_vars`, then it generates aliases for the hosts.
 
+Choose what inventory group is used.
+
+```yml
+hosts_inventory_group: "{{ groups['all'] }}"
+```
+
 ### All Private
 
 If this option and the `hosts_inventory_to_hosts` is enabled it writes all private ip addresses from the inventory into the hosts
